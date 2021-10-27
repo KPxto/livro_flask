@@ -1,4 +1,5 @@
 import os
+import random, string
 
 
 class Config(object):
@@ -7,7 +8,7 @@ class Config(object):
     TEMPLATE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:25123436@localhost:3306/livo_flask"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:25123436@localhost:3306/livro_flask"
 
 
 class DevelopmentConfig(Config):
